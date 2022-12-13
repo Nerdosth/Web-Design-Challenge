@@ -8,13 +8,13 @@
 
     <!-- Add a title here -->
 
-    <title>Comparison Dashboard</title>
+    <title>Wind Speed Visualization</title>
 
     <!-- Boostrap Stylesheet -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" media="screen">
 
     <!-- Our own CSS stylesheet -->
-    <link rel="stylesheet" href="assets/css/styles.css" media="screen">
+    <link rel="stylesheet" href="../assets/css/styles.css" media="screen">
 
   </head>
 
@@ -23,7 +23,7 @@
     <div class="navigation">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-          <a class="navbar-brand" href="index.html">Latitude</a>
+            <a class="navbar-brand" href="index.html" style="background-color: #090ead;">Latitude</a>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
               <ul class="navbar-nav ml-auto">
                 <li class="dropdown navbar">
@@ -34,7 +34,6 @@
                     <a class="dropdown-item" href="temp.html">Max Temperature</a><br>
                     <a class="dropdown-item" href="humidity.html">Humidity</a><br>
                     <a class="dropdown-item" href="cloudiness.html">Cloudiness</a><br>
-                    <a class="dropdown-item" href="wind.html">Wind Speed</a><br>
                    </div> 
                 </li>
     
@@ -48,46 +47,47 @@
                 </div>
       
       </nav>
-      </div>		
+      </div>	
     <!-- End of navbar -->
 
     <!-- Start of container -->
-    <div class="container" style="padding-bottom: 50px;">
-      <h1 class="title">Comparison Dashboard</h1>
-      <hr class="light">
-      <p style="text-align:center">Click plot images to get an analysis summary.</p>
-      <br>
-      <div class="row">
-          <div class="col-lg-6" style="padding: 30px;">
-            <h3 class="title" style="text-align: center">Max Temperature</h3>
-            <a href="temp.html">
-                <img alt="Max Temperature Graph" src="/assets/images/Fig1.png" class="image-fluid">
-            </a>
+
+    <div class="container">	
+			<div class="row">
+				<div class="col-lg-7 col-md-12">
+					<div class="box">
+						<h1 class="title">Wind Speed</h1>
+						<hr class="light">
+            <p>There is no significant relationship between Latitude and Wind Speed. When comparing the Northern and Southern Hemisphere, there is a positive correlation between wind speed and it's delta from 0-Lat (wind speeds go up) in the Northern Hemisphere. Where in the Southern Hemisphere there is a negative correlation between wind speed and it's delta from 0-lat (wind speeds go down).</p>
+						<img alt="Wind Speed Graph" src="/assets/images/Fig4.png">
+    				</div>
+					
           </div>
-          <div class="col-lg-6" style="padding: 30px;">
-            <h3 class="title" style="text-align: center">Humidity</h3>
-            <a href="humidity.html">
-                <img alt="Humidity Graph" src="/assets/images/Fig2.png" class="image-fluid">
-            </a>
-          </div>
-        </div>
-    
-        <div class="row">
-          <div class="col-lg-6" style="padding: 30px;">
-            <h3 class="title" style="text-align: center">Cloudiness</h3>
-            <a href="cloudiness.html">
-                <img alt="Cloudiness Graph" src="/assets/images/Fig3.png" class="image-fluid">
-            </a>
-    
-          </div>
-          <div class="col-lg-6" style="padding: 30px;">
-            <h3 class="title" style="text-align: center">Wind Speed</h3>
-            <a href="wind.html">
-                <img alt="Wind Speed Graph" src="/assets/images/Fig4.png" class="image-fluid">
-            </a>
-          </div>
-        </div>
-      </div>
+				<div class="col-lg-5 col-md-12">
+					<div class="box">
+						<h3 class="title">Visualizations</h3>
+						<hr class="light">
+						<div class="container">
+							<div class="row" style="padding-bottom: 30px;">
+								<div class="col-6">
+									<a href="temp.html"><img alt="Max Temperature Graph" src="/assets/images/Fig1.png" class="image-fluid"></a>
+								</div>
+								<div class="col-6">
+									<a href="humidity.html"><img alt="Humidity Graph" src="/assets/images/Fig2.png" class="image-fluid"></a>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-6">
+									<a href="cloudiness.html"><img alt="Cloudiness Graph" src="/assets/images/Fig3.png" class="image-fluid"></a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 
@@ -101,5 +101,3 @@
   </body>
 
 </html>
-
-
