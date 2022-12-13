@@ -16,7 +16,7 @@ Navbar
     
 }
 
-.navigation .navbar-brand {
+.navbar-brand {
     color: #EDEDED;
     font-family: Georgia;
     font-size: 30px;
@@ -33,8 +33,9 @@ Navbar
     max-height: 70px;
     margin-top: auto;
     background-color: #EDEDED;
-    font-size: 20px;
+    font-size: 30px;
     color: #EDEDED;
+    text-size-adjust:auto;
     
 
 }
@@ -44,7 +45,7 @@ Navbar
 }
 /* Show different color when hovering over items on the navbar */
 .dropdown .dropdown-menu .dropdown-item:active, .dropdown .dropdown-menu .dropdown-item:hover{
-    background-color:#1105fb20; 
+    background-color:#6D8092; 
 }
 
 .navigation .navbar-brand:hover{
